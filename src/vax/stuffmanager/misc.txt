@@ -1,0 +1,47 @@
+
+  /*
+   private static void initial_DB_entries() {
+   em.getTransaction().begin();
+   ElectronicItem p;
+   p = new ElectronicItem();
+   p.setName( "LM4562" );
+   p.setCount( 3 );
+   p.setVoltageLow( 2.5 );
+   p.setVoltageHigh( 17 );
+   p.setVendor( "TI" );
+   p.setType( "op-amp" );
+   p.setSubname( "NA/NOPB" );
+   p.setMaxCurrent( 0.02 );
+   p.setPackaging( "PDIP" );
+   p.setNotes( "1x audio PDIP8" );
+   em.persist( p );
+   p = new ElectronicItem();
+   p.setName( "HIN238" );
+   p.setCount( 2 );
+   p.setVoltageLow( 4.5 );
+   p.setVoltageHigh( 5.5 );
+   p.setVendor( "Intersil" );
+   p.setType( "RS232 Tx/Rx" );
+   p.setSubname( "CPZ" );
+   p.setMaxCurrent( 0.01 );
+   p.setPackaging( "PDIP" );
+   p.setNotes( "4Tx/4Rx PDIP24" );
+   em.persist( p );
+   em.getTransaction().commit();
+   }
+   */
+
+    /*
+     Query q1 = em.createQuery( "SELECT COUNT(ei) FROM ElectronicItem AS ei" );
+     System.out.println( "Total ElectronicItem count: " + q1.getSingleResult() );
+     */
+    /*
+     Query q2 = em.createQuery( "SELECT AVG(p.x) FROM Point p" );
+     System.out.println( "Average X: " + q2.getSingleResult() );
+     */
+    /*
+     TypedQuery<String> q;
+     String sq1 = "SELECT OBJECT(ei) FROM ElectronicItem ei";
+     for( ElectronicItem ei : em.createQuery( sq1, ElectronicItem.class ).getResultList() )
+     System.out.println( ei );
+     */
